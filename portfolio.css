@@ -1,0 +1,293 @@
+body{
+    width: 1300px;
+}
+#title{
+    padding: 0%;
+    margin: 0%;
+    width: 100%;
+    background-color: #3498db;
+    text-align: center;
+    font-size: 100px;
+    font-family: cursive;
+}
+.box{
+    margin-right: 2px;
+    background-color: #3498db;
+    width: 200px;
+    height: 2500px;
+    display: block;
+    float: left;    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+.middle{
+    position: absolute;
+    left: 0;
+    margin-top: 0;
+    border-color: black;
+    float: left;
+}
+.menu{
+    margin-right: 2px;
+    width: 200px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.item{
+    border-top: 1px solid #2980b9;
+    overflow: hidden;
+}
+.btn{
+    display: block;
+    padding: 16px 20px;
+    background: #3498db;
+    color: white;
+    position: relative;
+}
+.btn:before{
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background:#3498db;
+    left: 20px;
+    bottom: -7px;
+    transform: rotate(45deg);
+}
+.btn i{
+    margin-right: 10px;
+}
+.smenu{
+    background: #333;
+    overflow: hidden;
+    transition: max-height 0.8s;
+    max-height: 0;
+}
+.smenu a{
+    display: block;
+    padding: 16px 26px;
+    color: white;
+    font-size: 14px;
+    margin: 4px 0;
+    position: relative;
+}
+.smenu a:before{
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background: #3498db;
+    left: 0;
+    top: 0;
+    transition: 0.8s;
+    opacity: 0;
+}
+.smenu a:hover:before{
+    opacity: 1;
+}
+.item:target .smenu{
+    max-height: 10em;
+}
+
+/* スライドショー */
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.cp_cssslider1 {
+    width: 400px;
+    padding-top: 300px; /* 画像の高さ */
+    position: relative;
+    margin-top: 5px;
+    margin-left: 200px;
+    text-align: center;
+}
+
+.cp_cssslider1 > img {
+    max-width: 400px;
+    max-height: 300px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 0.5s;
+    border-radius: 3px;
+    box-shadow:0px 0px 5px 0px rgba(0,0,0,0.3);
+}
+
+.cp_cssslider1 input[name='cp_switch'] {
+    display: none;
+}
+
+/* サムネイル */
+.cp_cssslider1 label {
+    margin: 15px 5px 0 5px;
+    border: 2px solid #ffffff;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    opacity: 0.6;
+    border-radius: 3px;
+}
+
+.cp_cssslider1 label:hover {
+    opacity: 0.9;
+}
+
+.cp_cssslider1 label img {
+    display: block;
+    width: 40px;
+    border-radius: 2px;
+}
+
+.cp_cssslider1 input[name='cp_switch']:checked + label {
+    border: 2px solid #FF7043;
+    opacity: 1;
+}
+
+.cp_cssslider1 input[name='cp_switch'] ~ img {
+    opacity: 0;
+}
+
+.cp_cssslider1 input[name='cp_switch']:checked + label + img {
+    opacity: 1;
+}
+
+.cp_cssslider2 {
+    width: 400px;
+    padding-top: 300px; /* 画像の高さ */
+    position: relative;
+    margin-top: 5px;
+    margin-left: 200px;
+    text-align: center;
+}
+
+.cp_cssslider2 > img {
+    max-width: 400px;
+    max-height: 300px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 0.5s;
+    border-radius: 3px;
+    box-shadow:0px 0px 5px 0px rgba(0,0,0,0.3);
+}
+
+.cp_cssslider2 input[name='switch'] {
+    display: none;
+}
+
+/* サムネイル */
+.cp_cssslider2 label {
+    margin: 15px 5px 0 5px;
+    border: 2px solid #ffffff;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    opacity: 0.6;
+    border-radius: 3px;
+}
+
+.cp_cssslider2 label:hover {
+    opacity: 0.9;
+}
+
+.cp_cssslider2 label img {
+    display: block;
+    width: 40px;
+    border-radius: 2px;
+}
+
+.cp_cssslider2 input[name='switch']:checked + label {
+    border: 2px solid #FF7043;
+    opacity: 1;
+}
+
+.cp_cssslider2 input[name='switch'] ~ img {
+    opacity: 0;
+}
+
+.cp_cssslider2 input[name='switch']:checked + label + img {
+    opacity: 1;
+}
+
+/* 内容 */
+.main{
+    display: inline-block;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+h1.sub_title {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #6cb4e4;
+    text-align: center;
+    padding: 0.25em;
+    max-width: 450px;
+    border-top: solid 2px #6cb4e4;
+    border-bottom: solid 2px #6cb4e4;
+    background: -webkit-repeating-linear-gradient(-45deg, #f0f8ff, #f0f8ff 3px,#e9f4ff 3px, #e9f4ff 7px);
+    background: repeating-linear-gradient(-45deg, #f0f8ff, #f0f8ff 3px,#e9f4ff 3px, #e9f4ff 7px);
+    display: inline-block;
+}
+
+h2.sub_title {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-bottom: solid 3px #cce4ff;
+    position: relative;
+    display: inline-block;
+}
+
+.prf_main{
+    margin: 0%;
+    padding: 0%;
+    display: block;
+}
+
+#prf_img, #goods1 img, #goods2 img{
+    margin: 0%;
+    padding: 0%;
+    width: 300px;
+    height: 200px;
+    display: inline-block;
+}
+
+.table{
+    margin: 0%;
+    padding: 0%;
+    display: inline-block;
+    font-size: 20px;
+}
+table{
+    text-align: left;
+    font-size: 20px;
+}
+p{
+    display: block;
+    margin-left: 0px;
+    font-size: 20px;
+}
+.club_act .table{
+    display: block;
+    margin-left: 0px;
+}
+.prg_goods{
+    display: block;
+}
+.goods{
+    margin-left: 0px;
+    display: inline-block;
+}
+.goods img{
+    max-width: 400px;
+    max-height: 300px;
+}
