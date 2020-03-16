@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.0/css/all.css">
+  </head>
+  <body>
+    <!--タイトル-->
+    <div id="title">Portfolio</div>
+    <!--メニュー-->
+    <div class="middle">
+      <div class="menu">
+        <li class="item" id='profile'>
+          <a href="#profile" class="btn"><i class="far fa-user"></i>プロフィール</a>
+          <div class="smenu">
+            <a href="#">プロフィール</a>
+          </div>
+        </li>
+
+        <li class="item" id='club'>
+          <a href="#club" class="btn"><i class="fas fa-running"></i>部活</a>
+          <div class="smenu">
+            <a href="#club_act">活動歴・実績</a>
+            <a href="#club_photo">写真</a>
+          </div>
+        </li>
+
+        <li class="item" id="intern">
+          <a href="#intern" class="btn"><i class="fas fa-user-tie"></i>インターン</a>
+          <div class="smenu">
+            <a href="#int_place">勤務先</a>
+            <a href="#int_skill">身に付いたスキル</a>
+            <a href="#int_photo">写真</a>
+          </div>
+        </li>
+
+        <li class="item" id="programming">
+          <a href="#programming" class="btn"><i class="fas fa-laptop-code"></i>プログラミング</a>
+          <div class="smenu">
+            <a href="#prg_goods">成果物</a>
+            <a href="#prg_links">リンク</a>
+          </div>
+        </li>
+
+        <li class="item">
+          <a class="btn" href="#"><i class="fas fa-sign-out-alt"></i>TOPに戻る</a>
+        </li>
+      </div>
+    </div>
+    <div class="box"></div>
+    <!--内容-->
+    <div class="main">
+
+      <div id="profile">
+        <h1 class="sub_title">プロフィール</h1>
+        <div class="prf_main">
+          <img id="prf_img" src="peach-1.jpg">
+          <div class="table">
+            <table>
+              <tr>
+                <th>氏名　　</th><th>井上夏貴</th>
+              </tr>
+              <tr>
+                <th>生年月日　　</th><th>1997年7月19日</th>
+              </tr>
+              <tr>
+                <th>出身校　　</th><th><p>私立明星高校</p><p>東京学芸大学</p></th>
+              </tr>
+              <tr>
+                <th>趣味・特技　　</th><th>漫画、アニメ、プログラミング、数学</th>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div id="club">
+        <h1 class="sub_title">部活</h1>
+        <div class="club_act">
+          <h2 class="sub_title"><a name="club_act"></a>活動歴・実績</h2>
+          <div class="table">
+            <table>
+              <tr>
+                <th>2016年度　　</th><th>男子ラクロス部入部。夏まで学年リーダーを務める。</th>
+              </tr>
+              <tr>
+                <th>2017年度　　</th><th>会計係を務める。最後の学年試合後に休部、9月終わりに復帰。リーグ戦には出場できず。</th>
+              </tr>
+              <tr>
+                <th>2018年度　　</th><th>備品会計係、DF副リーダーを務める。初めてのリーグ戦出場。3部Cリーグ3位で終わる。</th>
+              </tr>
+              <tr>
+                <th>2019年度　　</th><th>主将を務める。3部Aリーグ1位で勝ち抜け、入れ替え戦に進む。4-2で東洋大学を下し見事2部昇格。</th>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="club_photo">
+          <h2 class="sub_title"><a name="club_photo"></a>写真</h2>
+          <div class="cp_cssslider1">
+            <input type="radio" name="cp_switch" id="photo1" checked/>
+            <label for="photo1"><img src="img1.jpg" /></label>
+            <img src="img1.jpg" />
+            <input type="radio" name="cp_switch" id="photo2"/>
+            <label for="photo2"><img src="img2.jpg" /></label>
+            <img src="img2.jpg" />
+            <input type="radio" name="cp_switch" id="photo3"/>
+            <label for="photo3"><img src="img3.jpg" /></label>
+            <img src="img3.jpg" />
+            <input type="radio" name="cp_switch" id="photo4"/>
+            <label for="photo4"><img src="img4.jpg" /></label>
+            <img src="img4.jpg" />
+            <input type="radio" name="cp_switch" id="photo5"/>
+            <label for="photo5"><img src="img5.jpg" /></label>
+            <img src="img5.jpg" />
+          </div>
+        </div>
+      </div>
+
+      <div id="intern">
+        <h1 class="sub_title">インターン</h1>
+        <div class="intern_place">
+          <h2 class="sub_title"><a name="int_place"></a>勤務</h2>
+          <p>N高等学校　大学受験理系TA→プログラミングTA</p>
+        </div>
+        <div class="intern_skill">
+          <h2 class="sub_title"><a name="int_skill"></a>身に付いたスキル</h2>
+          <p>生徒対応、プログラミング、PCの扱い、電話対応</p>
+        </div>
+        <div class="intern_photo">
+          <h2 class="sub_title"><a name="int_photo"></a>写真</h2>
+          <div class="cp_cssslider2">
+            <input type="radio" name="switch" id="photo6" checked/>
+            <label for="photo6"><img src="img6.jpg" /></label>
+            <img src="img6.jpg" />
+            <input type="radio" name="switch" id="photo7"/>
+            <label for="photo7"><img src="img7.jpg" /></label>
+            <img src="img7.jpg" />
+            <input type="radio" name="switch" id="photo8"/>
+            <label for="photo8"><img src="img8.jpg" /></label>
+            <img src="img8.jpg" />
+            <input type="radio" name="switch" id="photo9"/>
+            <label for="photo9"><img src="img9.jpg" /></label>
+            <img src="img9.jpg" />
+            <input type="radio" name="switch" id="photo10"/>
+            <label for="photo10"><img src="img10.jpg" /></label>
+            <img src="img10.jpg" />
+          </div>
+        </div>
+      </div>
+
+      <div id="programming">
+        <h1 class="sub_title">プログラミング</h1>
+        <div class="prg_goods">
+          <h2 class="sub_title"><a name="prg_goods"></a>成果物</h2>
+          <div class="goods_ex">
+            <div class="goods">
+              <p>モンテカルロ法によるπ近似</p>
+              <img src="mc.png" alt="">
+            </div>
+            <div class="goods">
+              <p>正多角形によるπ近似</p>
+              <img src="polygons.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="prg_links">
+          <h2 class="sub_title"><a name="prg_links"></a>リンク</h2>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
